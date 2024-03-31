@@ -18,6 +18,7 @@ public class CurrencyDataDaoImpl implements CurrencyDataDao {
     public List<CurrencyDataEntity> findAll() {
         return repo.findAll();
     }
+    @SuppressWarnings("null")
     @Override
     public void save(CurrencyDataEntity entity) {
         repo.save(entity);
@@ -28,6 +29,7 @@ public class CurrencyDataDaoImpl implements CurrencyDataDao {
         repo.deleteAll();
     }
 
+    @SuppressWarnings("null")
     @Override
     public void saveAll(List<CurrencyDataEntity> entityList) {
         repo.saveAll(entityList);
